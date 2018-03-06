@@ -1,0 +1,45 @@
+@import './Variables.scss';
+
+.button {
+  min-width: 200px;
+  height: 45px;
+
+  display: inline-block;
+
+  & > * {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  font-weight: 400;
+  font-size: 16px;
+
+  transition: color .3s ease, opacity .3s ease, background .3s ease;
+
+  background: #fff;
+  color: $primary-color;
+  &:hover {
+    color: lighten($primary-color, 10%);
+  }
+
+  &.primary {
+    background: $primary-color;
+    color: #fff;
+    &:hover {
+      background: lighten($primary-color, 10%);
+    }
+  }
+
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
+}

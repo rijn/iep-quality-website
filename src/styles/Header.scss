@@ -1,0 +1,39 @@
+@import "./Variables.scss";
+
+.nav {
+	z-index: 999;
+
+	position: relative;
+
+	height: $nav-height * $ratio;
+	padding: 0 100px;
+	background: $primary-color;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	img {
+		height: $nav-height * $ratio / 2;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		a {
+			text-decoration: none;
+			margin: 0 50px / 2 * $ratio;
+			&:last-child {
+				margin-right: 0;
+			}
+			color: #fff;
+
+			font-weight: 300;
+
+			text-transform: uppercase;
+		}
+	}
+}

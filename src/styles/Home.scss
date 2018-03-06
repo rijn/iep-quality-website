@@ -1,0 +1,58 @@
+@import "./Variables.scss";
+
+.sectionA {
+  position: relative;
+  overflow: hidden;
+
+  .sectionAImage {
+    width: 50%;
+    float: right;
+    img {
+      width: 100%;
+    }
+    margin-bottom: -3px;
+  }
+
+  .sectionATextContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    overflow: hidden;
+
+    .sectionAText {
+      padding: 0 100px;
+      h1 {
+        margin: 0 0 20px 0;
+        font-size: 80px;
+        color: $primary-color;
+        font-weight: 400;
+      }
+      p {
+        font-size: 24px;
+        color: $primary-color;
+        line-height: 1.5em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.sectionB {
+  padding: 70px 0;
+  text-align: center;
+  background: $secondary-color;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
