@@ -37,7 +37,7 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       window.document.getElementById('loader').style.display = 'none';
-    }, 1000);
+    }, 300);
   }
 
   render() {
