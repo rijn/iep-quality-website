@@ -54,5 +54,46 @@
     font-size: 36px;
     font-weight: 400;
     color: #fff;
+    margin-top: 0;
+  }
+
+  p {
+    color: #fff;
+    line-height: 1.5em;
+    max-width: 550px;
+    margin: 2em auto;
+  }
+}
+
+.sectionC {
+  overflow: hidden;
+  
+  & > * {
+    padding: 70px 0;
+    text-align: center;
+    width: 50%;
+    float: left;
+  }
+
+  .sectionCLeft {
+    background: #EDEDED;
+  }
+
+  .sectionCRight {
+    background: #FAFAFA;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #19647E;
+    margin-top: 0;
+  }
+
+  p {
+    color: #13293D;
+    line-height: 1.5em;
+    max-width: 550px;
+    margin: 2em auto;
   }
 }
