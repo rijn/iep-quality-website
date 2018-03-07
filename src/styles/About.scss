@@ -1,0 +1,12 @@
+@import "./Variables.scss";
+
+.sectionB {
+  padding: 70px 100px;
+
+  img {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}

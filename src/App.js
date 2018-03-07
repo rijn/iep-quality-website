@@ -12,11 +12,19 @@ import Loading from './containers/Loading';
 
 const LoadableHome = Loadable({
   loader: () => import('./containers/Home'),
-  loading: Loading,
+  loading: Loading
+});
+const LoadableProduct = Loadable({
+  loader: () => import('./containers/Product'),
+  loading: Loading
+});
+const LoadableAbout = Loadable({
+  loader: () => import('./containers/About'),
+  loading: Loading
 });
 const LoadableContact = Loadable({
   loader: () => import('./containers/Contact'),
-  loading: Loading,
+  loading: Loading
 });
 
 class App extends Component {
@@ -27,7 +35,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.document.getElementById('loader').style.display = 'none';
+    setTimeout(() => {
+      window.document.getElementById('loader').style.display = 'none';
+    }, 1000);
   }
 
   render() {
@@ -40,6 +50,8 @@ class App extends Component {
           <Header />
           <div className={styles.container} style={{ minHeight: this.state.height }}>
             <Route exact path="/" component={LoadableHome}/>
+            <Route path="/product" component={LoadableProduct}/>
+            <Route path="/about" component={LoadableAbout}/>
             <Route path="/contact" component={LoadableContact}/>
           </div>
           <Footer />

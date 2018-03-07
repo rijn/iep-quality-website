@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from '../styles/Home.scss';
 import Button from './Button';
+import { NavLink } from 'react-router-dom';
 
 class Home extends Component {
   render() {
@@ -21,18 +22,18 @@ class Home extends Component {
         <div className={styles.sectionB}>
           <h1>Our Product</h1>
           <p>Our product is a tutorial that will focus on IEP creation for students with high-incidence disabilities who will participate in the general state achievement testing, with or without accommodations.</p>
-          <Button>VIEW MORE</Button>
+          <NavLink to="/product"><Button>VIEW MORE</Button></NavLink>
         </div>
         <div className={styles.sectionC}>
           <div className={styles.sectionCLeft}>
             <h1>About Our Company</h1>
             <p>Our purpose is to create and test a web-based IEP Tutorial and decision-making support system that will be linked to the State of Illinois’ IEP creation software.</p>
-            <Button primary>LEARN MORE</Button>
+            <NavLink to="/about"><Button primary>LEARN MORE</Button></NavLink>
           </div>
           <div className={styles.sectionCRight}>
             <h1>Connect With Us</h1>
             <p>Our purpose is to create and test a web-based IEP Tutorial and decision-making support system that will be linked to the State of Illinois’ IEP creation software.</p>
-            <Button primary>CONTACT</Button>
+            <NavLink to="/contact"><Button primary>CONTACT</Button></NavLink>
           </div>
         </div>
       </div>

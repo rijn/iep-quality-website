@@ -1,0 +1,18 @@
+@import "./Variables.scss";
+
+.container {
+  padding: 60px 0;
+  text-align: center;
+  background: $secondary-color;
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 0 0 20px 0;
+  }
+  p {
+    color: #fff;
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
